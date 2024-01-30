@@ -87,7 +87,7 @@ namespace ParkingDemo
                 default: return 0;
             }
         }
-
+        public int this[Vehicle vehicle] => RemainingSpaceOf(vehicle);
         #endregion
     }
 

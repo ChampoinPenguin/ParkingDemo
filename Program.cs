@@ -58,7 +58,7 @@ internal class Program
             var remaining = lots.FindAll(place => place.RemainingSpaceOf(myVehicle) > 0);
             foreach (var lot in remaining)
             {
-                string text = $"{lot.PARKINGNAME}\t 剩餘{name[myVehicle]}車位 {lot.RemainingSpaceOf(myVehicle)}";
+                string text = $"{lot.PARKINGNAME}\t 剩餘{name[myVehicle]}車位 {lot[myVehicle]}";
                 Console.WriteLine(text);
             }
 
